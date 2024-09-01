@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beautiful CV Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+      .cv-block.block-intro {
+        background-image: url('assets/img/avatar1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        padding: 150px 0; /* Increased padding for more vertical space */
+        position: relative;
+        text-align: center;
+        min-height: 100vh; /* Ensure it covers the full viewport height */
+      }
+      .cv-block.block-intro::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.616); /* Dark overlay for better text visibility */
+        z-index: 1;
+      }
+      .cv-block.block-intro .container {
+        position: relative;
+        z-index: 2;
+      }
+      .cv-block.block-intro .avatar {
+        position: relative;
+        display: inline-block;
+        width: 200px; /* Adjust size as needed */
+        height: 200px; /* Adjust size as needed */
+        border-radius: 50%; /* Makes the avatar circular */
+        overflow: hidden; /* Ensures that the image fits inside the circle */
+        margin:0; /* Remove margin */
+      }
+      .cv-block.block-intro .avatar img {
+        width: 100%; /* Ensures the image covers the circle */
+        height: 100%; /* Ensures the image covers the circle */
+        object-fit: cover; /* Maintains aspect ratio and covers the circle */
+      }
+      .cv-block.block-intro p {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .btn-outline-primary {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .info {
+        padding: 30px 0; /* Added padding to lower the Work Experience section */
+      }
+      .group {
+        margin-bottom: 50px; /* Added margin-bottom for space between sections */
+      }
+      footer.page-footer .social-icons a {
+        margin: 0 25px;
+        font-size: 1.8rem; /* Increase icon size */
+        color: #000000be;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">IanBonifacio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item item">
+              <a class="nav-link" href="#work-experience">School Projects</a>
+            </li>
+            <li class="nav-item item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="cv-block block-intro border-bottom">
+      <div class="container">
+        <div class="avatar">
+          <img class="img-fluid" src="assets/img/avatar1.jpg">
+        </div><br>
+        <p>Hello! I am <strong>IanBonifacio</strong>. My passion is developing creative solutions as a developer.</p>
+        <a href="mailto:ianboifacio02@gmail.com" class="btn btn-outline-primary">Hire Me</a>
+      </div>
+    </section>
+    <main class="page cv-page">
+      <section class="cv-block info">
+        <div class="container">
+          <div class="work-experience group" id="work-experience">
+            
+
+                    <div class="project-section">
+                      <h2>School Projects</h2>
+                      <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="assets/img/Tinkercad1.PNG" alt="arduiono" class="project-image">
+                        <div class="project-info">
+                            <h3>Tinkercad Project</h3>
+                            <p>Internet of Things</p>
+                            <a href="https://www.tinkercad.com/things/dHivTEjCQ4e-bonifacio/editel?sharecode=AWc3Dnxc1L-GBmNnTw_HZDY-TC6gSYoL-VjXHK3sqBQ" class="btn">See Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                      <img src="assets/img/Prof-Architect.PNG" alt="arduiono" class="project-image">
+                      <div class="project-info">
+                          <h3>Professional Cloud Architect Journey</h3>
+                          <p>Routing and Switching</p>
+                          <a href="https://www.cloudskillsboost.google/public_profiles/946657b5-dec4-4cf7-bfa4-9318247cd6a3/badges/6591462" class="btn">See Project</a>
+                      </div>
+                  </div> 
+                    <div class="project-item">
+                      <img src="assets/img/Prof-NetworkEng.PNG" alt="arduiono" class="project-image">
+                      <div class="project-info">
+                          <h3>Professional Network Engineer Journey</h3>
+                          <p>Routing and Switching</p>
+                          <a href="https://www.cloudskillsboost.google/public_profiles/946657b5-dec4-4cf7-bfa4-9318247cd6a3/badges/5741865" class="btn">See Project</a>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+          
+          <div class="group" id="skills">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="skills info-card">
+                  <h2>Skills</h2>
+                  <h3>PYTHON</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    </div>
+                  </div>
+                  <h3>HTML</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    </div>
+                  </div>
+                  <h3>PHP</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contact-info info-card">
+                  <h2>Contact Info</h2>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="ion-android-calendar icon"></i>
+                    </div>
+                    <div class="col-9">
+                      <span>November 02,2001</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="ion-person icon"></i>
+                    </div>
+                    <div class="col-9">
+                      <span>Ian Victory S. Bonifacio</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="ion-ios-telephone icon"></i>
+                    </div>
+                    <div class="col-9">
+                      <span>+63 935 051 5598</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">
+                      <i class="ion-at icon"></i>
+                    </div>
+                    <div class="col-9">
+                      <span>ianbonifacio02@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="section-label"id="education">
+          <h2 class="text-center">Education</h2>
+        </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Elementary</h3>
+                <h4 class="organization">Pedro Acharon Sr. Central Elementary School</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">A.Y 2009 - 2015</time>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Junior High School</h3>
+                <h4 class="organization">Lagao National High School</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">A.Y 2015 - 2019</time>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Senior High School</h3>
+                <h4 class="organization">Lagao National High School</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">A.Y 2019 - 2021</time>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Tertiary</h3>
+                <h4 class="organization">Mindanao State University</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">A.Y 2021 - Present</time>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Certificates Section -->
+          <div class="section-label">
+            <h2>Certificates</h2>
+          </div>
+        <div class="certificates-grid">
+            <div class="certificate-item">
+              <img src="assets/img/Bonifacio (1).png" alt="Certificate 1" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (2).png" alt="Certificate 2" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (3).png" alt="Certificate 3" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (4).png" alt="Certificate 4" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (5).png" alt="Certificate 5" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (6).png" alt="Certificate 6" onclick="openModal(this.src)">
+            </div>
+            <div class="certificate-item">
+                <img src="assets/img/Bonifacio (7).png" alt="Certificate 7" onclick="openModal(this.src)">
+            </div>
+            <!-- Modal Structure -->
+            <div id="certificateModal" class="modal" onclick="closeModal()">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modalImage">
+            </div>
+        </div>
+        <script>
+          function openModal(src) {
+              var modal = document.getElementById("certificateModal");
+              var modalImg = document.getElementById("modalImage");
+              modal.style.display = "block";
+              modalImg.src = src;
+          }
+          
+          function closeModal() {
+              var modal = document.getElementById("certificateModal");
+              modal.style.display = "none";
+          }
+      </script>
+        <div class="hobbies group" id="hobbies">
+          <h2 class="text-center">Hobbies</h2>
+          <p class="text-center text-muted">"Passionate about exploring new technologies and staying current with industry trends, I also dedicate time to personal interests like dancing and playing sports. I actively participate in dance classes and local sports leagues, which helps me stay physically active and build teamwork skills. Engaging in these activities not only keeps me balanced and energized but also enhances my creativity and problem-solving abilities."</p>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ian.bonifacio.121"><i class="ion-social-facebook" title="Facebook"></i></a>
+            <a href="https://www.instagram.com/ayaan_bxnifxcio/"><i class="ion-social-instagram-outline" title="Instagram"></i></a>
+            <a href="https://www.twitter.com/IanBonifacio"><i class="ion-social-twitter" title="Twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      function openGmail() {
+          const email = "ian.bonifacio02@gmail.com";
+          const subject = "Job Offer: [Job Title] at [Company Name]";
+          const body = `Dear Ian Bonifacio,
+
+  
+  Greetings! We have been thoroughly impressed with your skills and experience, and we believe you would be an excellent fit for our team.
+After careful consideration, we are confident that your skills and experiences align perfectly with the needs of our team.
+We are thrilled to extend an offer to you for the position of [Job Title] at [Company Name]. If you're open to discussing this opportunity further, we would be thrilled to arrange a meeting at your earliest convenience.
+
+Please let us know a suitable time for a discussion, or feel free to reply to this email with any questions you might have.
+
+Looking forward to hearing from you!
+
+Best regards,
+
+[Your Name]
+[Your Position]
+[Company Name]
+[Contact Information]`;
+
+          const mailtoLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}';
+
+          const confirmSend = confirm('Are you sure you want to send this inquiry email to ${email}?');
+          
+          if (confirmSend) {
+              window.open(mailtoLink, '_blank');
+          }
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+  </script>
+  </body>
+</html>
